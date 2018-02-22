@@ -187,7 +187,7 @@ namespace GradCalc
                             Convert.ToString(this.dgvAnsicht.Rows[e.RowIndex].Cells["AB" + fächer[k]].Value), fächer[k]);
                 }
                 testForCells = false;
-                this.dgvAnsicht.Rows[e.RowIndex].Cells[2].Value = AbschlussBerechnen(noten);
+                this.dgvAnsicht.Rows[e.RowIndex].Cells[2].Value = $"{AbschlussBerechnen(noten)} -> {Calc.CalculateGraduation(noten)}";
                 testForCells = true;
             }
         }
